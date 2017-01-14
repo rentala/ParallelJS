@@ -4,13 +4,11 @@ Execute asynchronous js functions in parallel and get their results in a common 
 ##Usage
 
  
-    function executeInContext(func, i, result){
-       func(function (data) {
-            result[i] = data;
-               res[0];  //result of func1
-               res[1];  //result of func2
-        });
-    }
+    executeAsync([func1, func2, func3], function (res) {
+        console.log(res);
+        res[0];  //result of func1
+        res[1];  //result of func2
+    });
 Where func1, func2, func3 are your asyncronous functions. Such as:
 
 
