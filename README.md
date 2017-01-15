@@ -25,3 +25,6 @@ Where func1, func2, func3 are your asyncronous functions. Such as:
     function func3(cb) {
         cb({ data : "data", foo: "foo"})
     }
+
+
+####Note: Not to be confused with https://parallel.js.org/, a far more advanced library for way more complex problems
